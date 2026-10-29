@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="聯絡晨曦企業">
+  <title>聯絡我們｜晨曦企業</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">晨</span><span>晨曦企業</span></a>
+    <button class="menu-toggle" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+    <nav class="nav" id="main-nav"><a href="index.html">首頁</a><a href="about.html">公司介紹</a><a class="active" href="contact.html">聯絡我們</a></nav>
+  </header>
+  <main>
+    <section class="page-hero"><p class="eyebrow">GET IN TOUCH</p><h1>聯絡我們</h1><p>請留下您的聯絡資料與需求，我們會盡快回覆。</p></section>
+    <section class="section contact-layout">
+      <aside class="contact-info">
+        <p class="eyebrow">WE'RE HERE TO HELP</p><h2>期待聽見您的想法</h2>
+        <p>請填寫右側表單，讓我們了解您的需求。帶有 * 的欄位為必填。</p>
+        <div class="info-item"><span>✉</span><div><strong>電子郵件</strong><p>請透過右側表單聯絡我們</p></div></div>
+        <div class="info-item"><span>◷</span><div><strong>回覆時間</strong><p>一般工作日將盡快回覆</p></div></div>
+        <div class="privacy-note">🔒 您提供的資料僅用於回覆本次聯絡需求。</div>
+      </aside>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <label>姓名 <span>*</span><input name="name" type="text" autocomplete="name" placeholder="請輸入您的姓名" required></label>
+          <label>電話 <span>*</span><input name="phone" type="tel" autocomplete="tel" placeholder="請輸入聯絡電話" required></label>
+        </div>
+        <label>Email <span>*</span><input name="email" type="email" autocomplete="email" placeholder="name@example.com" required></label>
+        <label>聯絡內容 <span>*</span><textarea name="message" rows="5" placeholder="請描述您的需求或問題" required></textarea></label>
+        <label class="consent"><input type="checkbox" required> 我同意將以上資料用於回覆本次聯絡需求。</label>
+        <button class="button button-primary submit-button" type="submit">送出訊息 →</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <p class="form-hint">表單寄信功能需依照 README.md 設定 Google Apps Script 後才會正式啟用。</p>
+      </form>
+    </section>
+  </main>
+  <footer class="footer"><span>© <span class="year"></span> 晨曦企業</span><span>專業服務・誠信合作</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
