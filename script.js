@@ -18,7 +18,7 @@ if (form) {
     const submitButton = form.querySelector('button[type="submit"]');
 
     // 請先依 README.md 設定 Google Apps Script 網址，再替換下方的網址。
-    const SCRIPT_URL = '請在此貼上Google_Apps_Script網頁應用程式網址';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyoCnfaniZ2bQU7cGijDuoSSnQSzxjrTRKDwlFAuwAnIq0jrs8uW3DtbzasFn52vyss/exec';
 
     if (SCRIPT_URL.startsWith('請在此')) {
       status.textContent = '表單外觀已完成，但寄信功能尚未設定。請依照 README.md 完成 Google Apps Script 設定。';
